@@ -46,7 +46,4 @@ public class APIController {
     public Booking getBookingById(@PathVariable int id) {
         return null; // placeholder
     }
-
-    // Additional endpoints can go here
-
 }

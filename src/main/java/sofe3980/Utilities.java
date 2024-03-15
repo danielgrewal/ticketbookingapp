@@ -27,17 +27,4 @@ public class Utilities {
         // Implementation
         return null;
     }
-
-    /**
-     * Validates that the selected flights do not form a cyclic trip, i.e.,
-     * a trip where a multi-stop flight returns to the same airport.
-     * 
-     * @param flights The list of flights to validate.
-     * @return true if the trip is non-cyclic, false otherwise.
-     */
-    public static boolean validateNonCyclic(List<Flight> flights) {
-        // Implementation
-        return true;
-    }
-
 }

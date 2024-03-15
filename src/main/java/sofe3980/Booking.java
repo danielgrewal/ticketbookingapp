@@ -92,8 +92,6 @@ public class Booking {
         this.tickets = tickets;
     }
 
-    // additional methods that may be needed
-
     /**
      * Generates tickets for each flight in this booking.
      * 

@@ -1,8 +1,10 @@
 package sofe3980;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public class BookingManager {
 
@@ -52,6 +54,12 @@ public class BookingManager {
         return bookings.stream().filter(booking -> booking.getBookingId() == bookingId).findFirst();
     }
 
-    // Additional methods can go here
-
+    /**
+     * Checks if the proposed itinerary forms a cyclic trip, returning to the same airport.
+     * @param itinerary List of flights representing the proposed itinerary.
+     * @return true if the itinerary is cyclic, false otherwise.
+     */
+    public boolean isCyclicItinerary(List<Flight> itinerary) {
+        return false;
+    }
 }

@@ -53,6 +53,4 @@ public class UserManager {
                 .filter(user -> user.getUserId() == userId)
                 .findFirst();
     }
-
-    // Additional methods go here
 }

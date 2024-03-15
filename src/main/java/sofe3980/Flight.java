@@ -83,6 +83,4 @@ public class Flight {
     public void setDirectFlight(boolean isDirectFlight) {
         this.isDirectFlight = isDirectFlight;
     }
-
-    // other methods can go here
 }

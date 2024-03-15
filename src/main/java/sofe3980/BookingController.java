@@ -34,7 +34,7 @@ public class BookingController {
      * Fetch available flights from the FlightManager and display them.
      */
     @GetMapping("/flights")
-    public void viewAvailableFlights() {
+    public void viewWeeklyFlights() {
     }
 
     /**
@@ -57,6 +57,4 @@ public class BookingController {
      */
     public void displayBookingConfirmation(Booking booking) {
     }
-
-    // Additional methods can go here
 }

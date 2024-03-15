@@ -7,9 +7,9 @@ public class User {
     private int userId;
     private String name;
     private String email;
+    private String password;
     private LocalDate dob;
     private String passportNumber;
-    // Maybe add password?
 
     /**
      * Constructs a User with the specified name and email.
@@ -67,8 +67,6 @@ public class User {
     public void setPassportNumber(String passportNumber) {
         this.passportNumber = passportNumber;
     }
-
-    // Additional methods can go here
 
     // For easier debugging and printing the User object fields
     @Override

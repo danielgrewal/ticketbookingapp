@@ -58,10 +58,16 @@ public class FlightManager {
      * @param flightId The ID of the flight to retrieve.
      * @return The Flight object if found, or null otherwise.
      */
-    public Flight getFlightById(long flightId) {
+    public Flight getFlightById(int flightId) {
         return null;
     }
 
-    // Additional methods as needed for your application logic
-
+    /**
+     * Calculates the total flight time for a given flight or a series of connecting flights.
+     * @param flights List of flights for which to calculate the total time.
+     * @return Total flight time as a string
+     */
+    public String calculateTotalFlightTime(List<Flight> flights) {
+        return null;
+    }
 }
