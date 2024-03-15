@@ -25,7 +25,8 @@ public class Flight {
     /**
      * Calculates and returns the duration of the flight.
      * 
-     * @return The duration of the flight as a string
+     * @return The duration of the flight as a string, uses the attributes that are
+     *         already part of the Flight class.
      */
     public String calculateDuration() {
         return null;
