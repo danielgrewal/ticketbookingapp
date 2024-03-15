@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+// this class will be used to serve the API using RESTful requests
+// this will make testing easier
 @RestController
 @RequestMapping("/api")
 public class APIController {
@@ -29,24 +31,22 @@ public class APIController {
 
     // Example endpoint for retrieving all flights
     @GetMapping("/flights")
-    public List<Flight> getAllFlights() {
+    public List<Flight> getAvailableFlights() {
         return flightManager.getWeeklyFlights();
     }
 
     // Example endpoint for creating a new booking
     @PostMapping("/bookings")
     public Booking createBooking(@RequestBody Booking booking) {
-        // Assuming Booking class has necessary details like user, flights, etc.
         return bookingManager.createBooking(booking.getUser(), booking.getFlights(), booking.getBookingType());
     }
 
     // Example endpoint for retrieving a booking by ID
     @GetMapping("/bookings/{id}")
     public Booking getBookingById(@PathVariable int id) {
-        // Implementation to fetch booking by ID
-        return null; // Placeholder return
+        return null; // placeholder
     }
 
-    // Additional endpoints for updating and deleting bookings can be added here
+    // Additional endpoints can go here
 
 }

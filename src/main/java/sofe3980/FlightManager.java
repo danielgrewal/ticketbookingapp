@@ -1,32 +1,67 @@
 package sofe3980;
 
-import sofe3980.Flight;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FlightManager {
 
+    // If we are using a database, this will change to use that instead for storing
+    // flights
+    private List<Flight> flights;
+
+    public FlightManager() {
+        this.flights = new ArrayList<>();
+        // Initialize the flights list with some dummy data later for testing
+    }
+
     /**
-     * Searches for direct flights based on user criteria.
+     * Searches for direct flights based on the provided criteria.
+     * 
+     * @param from The departure location.
+     * @param to   The destination location.
+     * @param date The date of the flight.
+     * @return A list of flights matching the criteria.
      */
     public List<Flight> searchDirectFlights(String from, String to, LocalDate date) {
-        // Implementation
         return null;
     }
 
     /**
-     * Searches for multi-stop flights based on user criteria.
+     * Searches for multi-stop flights based on the provided paraneters.
+     * 
+     * @param from The departure location.
+     * @param to   The destination location.
+     * @param date The date of the flight.
+     * @return A list of flights matching the parameters for multi-stop flights.
      */
     public List<Flight> searchMultiStopFlights(String from, String to, LocalDate date) {
-        // Implementation
-        return null;
+        // Put multi-stop flight search functionality here
+        return new ArrayList<>();
     }
 
     /**
      * Retrieves the list of weekly direct flights.
+     * 
+     * @return A list of weekly direct flights.
      */
     public List<Flight> getWeeklyFlights() {
-        // Implementation
+        // Put getting weekly flights functionaity here, could filter flights based on
+        // certain parameters
+        return new ArrayList<>();
+    }
+
+    /**
+     * Retrieves a flight by its ID.
+     * 
+     * @param flightId The ID of the flight to retrieve.
+     * @return The Flight object if found, or null otherwise.
+     */
+    public Flight getFlightById(long flightId) {
         return null;
     }
+
+    // Additional methods as needed for your application logic
+
 }
