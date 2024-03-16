@@ -33,7 +33,7 @@ public class UserManager {
      * @return An Optional containing the User object if login is successful, or an
      *         empty Optional otherwise.
      */
-    public Optional<User> loginUser(String email) {
+    public Optional<User> loginUser(String email, String password) {
         return null;
     }
 }

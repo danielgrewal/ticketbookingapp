@@ -1,8 +1,6 @@
 package sofe3980;
 
-import sofe3980.Flight;
 import java.time.LocalTime;
-import java.util.List;
 
 public class Utilities {
 

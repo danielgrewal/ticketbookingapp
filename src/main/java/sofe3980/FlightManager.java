@@ -3,7 +3,6 @@ package sofe3980;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class FlightManager {
 
@@ -42,13 +41,11 @@ public class FlightManager {
     }
 
     /**
-     * Retrieves the list of weekly direct flights.
+     * Retrieves the list of weekly flights.
      * 
-     * @return A list of weekly direct flights.
+     * @return A list of weekly flights.
      */
     public List<Flight> getWeeklyFlights() {
-        // Put getting weekly flights functionaity here, could filter flights based on
-        // certain parameters
         return new ArrayList<>();
     }
 
