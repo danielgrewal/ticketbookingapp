@@ -96,7 +96,7 @@ public class Booking {
      * Generates tickets for each flight in this booking.
      * 
      */
-    public String generateTickets(List<Ticket> tickets) {
+    public String generateTickets() {
         // print the ticket info in some readable way
         return null;
     }
@@ -105,7 +105,7 @@ public class Booking {
      * Generates tickets for each flight in this booking.
      * 
      */
-    public double calculateTotalPrice(List<Flight> flights) {
+    public double calculateTotalPrice() {
         return (Double) null;
     }
 
