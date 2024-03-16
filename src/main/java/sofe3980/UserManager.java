@@ -23,9 +23,7 @@ public class UserManager {
      * @return The newly registered User object.
      */
     public User registerUser(String name, String email) {
-        User newUser = new User(name, email); // Assuming User has an appropriate constructor
-        users.add(newUser);
-        return newUser;
+        return null;
     }
 
     /**
@@ -36,21 +34,6 @@ public class UserManager {
      *         empty Optional otherwise.
      */
     public Optional<User> loginUser(String email) {
-        return users.stream()
-                .filter(user -> user.getEmail().equalsIgnoreCase(email))
-                .findFirst();
-    }
-
-    /**
-     * Retrieves a user by their ID.
-     * 
-     * @param userId The ID of the user to retrieve.
-     * @return An Optional containing the User object if found, or an empty Optional
-     *         otherwise.
-     */
-    public Optional<User> getUserById(long userId) {
-        return users.stream()
-                .filter(user -> user.getUserId() == userId)
-                .findFirst();
+        return null;
     }
 }

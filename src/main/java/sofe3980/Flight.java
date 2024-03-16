@@ -9,17 +9,17 @@ public class Flight {
     private LocalDateTime arrivalTime;
     private String origin;
     private String destination;
-    private boolean isDirectFlight;
+    private double price;
 
     // Constructor
     public Flight(int flightId, LocalDateTime departureTime, LocalDateTime arrivalTime,
-            String departureLocation, String destinationLocation, boolean isDirectFlight) {
+            String departureLocation, String destinationLocation, double price) {
         this.flightId = flightId;
         this.departureTime = departureTime;
         this.arrivalTime = arrivalTime;
         this.origin = departureLocation;
         this.destination = destinationLocation;
-        this.isDirectFlight = isDirectFlight;
+        this.price = price;
     }
 
     /**
@@ -54,8 +54,8 @@ public class Flight {
         return destination;
     }
 
-    public boolean isDirectFlight() {
-        return isDirectFlight;
+    public double getPrice() {
+        return price;
     }
 
     // Setters
@@ -80,7 +80,7 @@ public class Flight {
         this.destination = destinationLocation;
     }
 
-    public void setDirectFlight(boolean isDirectFlight) {
-        this.isDirectFlight = isDirectFlight;
+    public void setPrice(double price) {
+        this.price = price;
     }
 }

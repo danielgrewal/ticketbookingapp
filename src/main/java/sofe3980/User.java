@@ -17,11 +17,13 @@ public class User {
      * @param name  The name of the user.
      * @param email The email address of the user.
      */
-    public User(String name, String email) {
+    public User(int userId, String name, String email, String password, LocalDate dob, String passportNumber) {
+        this.userId = userId;   // maybe we can autogenerate this
         this.name = name;
         this.email = email;
-        // userId should be set here, but not sure if we will use a database or just
-        // generate an id
+        this.password = password;
+        this.dob = dob;
+        this.passportNumber = passportNumber;
     }
 
     // Getters
@@ -36,6 +38,10 @@ public class User {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public LocalDate getDob() {
@@ -58,6 +64,10 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public void setDob(LocalDate dob) {

@@ -51,7 +51,7 @@ public class BookingManager {
      *         otherwise.
      */
     public Optional<Booking> getBookingById(int bookingId) {
-        return bookings.stream().filter(booking -> booking.getBookingId() == bookingId).findFirst();
+        return null;
     }
 
     /**

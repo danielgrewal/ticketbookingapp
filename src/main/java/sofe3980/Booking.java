@@ -96,8 +96,17 @@ public class Booking {
      * Generates tickets for each flight in this booking.
      * 
      */
-    public void generateTickets() {
-        // Do something here
+    public String generateTickets(List<Ticket> tickets) {
+        // print the ticket info in some readable way
+        return null;
+    }
+    
+    /**
+     * Generates tickets for each flight in this booking.
+     * 
+     */
+    public double calculateTotalPrice(List<Flight> flights) {
+        return (Double) null;
     }
 
     // A easier way to print and debug the Booking object fields during development
