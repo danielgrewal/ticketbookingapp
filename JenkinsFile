@@ -1,3 +1,4 @@
+
 pipeline {
   agent any
   tools {
@@ -12,12 +13,12 @@ pipeline {
     }
     stage ('test') {
       steps {
-        sh 'mvn clean test -f ./ticketbookingapp/pom.xml'
+        sh 'mvn clean test -f ./pom.xml'
       }
     }
     stage ('build') {
       steps {
-        sh 'mvn package -DskipTests -f ./ticketbookingapp/pom.xml'
+        sh 'mvn package -DskipTests -f ./pom.xml'
       }
     }
     stage ('Deploy') {
