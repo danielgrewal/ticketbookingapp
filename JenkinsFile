@@ -21,9 +21,6 @@ pipeline {
         sh 'mvn package -DskipTests -f ./pom.xml'
       }
     }
-    stage ('Deploy') {
-      steps {
-        sh 'echo "bye bye"'
       }
     }
   }
